@@ -1,1 +1,1 @@
-Latest Built Version: 0.0.4
+Latest Built Version: 0.0.5

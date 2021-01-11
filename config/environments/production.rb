@@ -2,7 +2,7 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.hosts << "client-assertions-api-1087426447.us-west-2.elb.amazonaws.com"
+  config.hosts << "assertions-api.chattyops.com"
   config.hosts << IPAddr.new("10.0.0.0/16")
 
   # Code is not reloaded between requests.
