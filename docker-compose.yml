@@ -6,4 +6,5 @@ services:
       - "3000:3000"
     volumes:
        - .:/usr/src/app
+       - ~/.aws:/root/.aws
     env_file: .env

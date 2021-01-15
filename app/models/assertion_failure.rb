@@ -23,6 +23,8 @@ class AssertionFailure
 
   class << self
     def from_h(hash)
+      hash = hash.deep_symbolize_keys
+
       failure = self.new
       failure.id = hash[:id]
       failure.failed_at = hash[:failed_at]
