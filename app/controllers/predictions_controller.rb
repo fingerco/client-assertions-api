@@ -12,7 +12,7 @@ class PredictionsController < ApplicationController
     state.prediction_id = params.require(:prediction_id)
     state.steps_taken = params.require(:steps_taken)
     state.started_at = params.require(:started_at)
-    state.time_to_exist = params.require(:time_to_exist).to_i.seconds.from_now
+    state.time_to_exist = params.require(:time_to_exist).to_i.seconds.from_now.iso8601
     state.save
   end
 end
