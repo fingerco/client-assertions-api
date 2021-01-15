@@ -19,6 +19,10 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     resource '/assertions/*',
       headers: :any,
-      methods: [:post, :put, :options, :head]
+      methods: [:get, :post, :put, :options, :head]
+
+    resource '/predictions/*',
+      headers: :any,
+      methods: [:get, :post, :put, :options, :head]
   end
 end
